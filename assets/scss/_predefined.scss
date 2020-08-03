@@ -1,0 +1,67 @@
+// Colors
+//
+$theme: orange; // Linkcolor and ? (#018574)
+$text: #ffffff; // Textcolor (#e8eef2)
+$light-grey: #3b4146; // BACKGROUND (#494f5c)
+$dark-grey: #464646; // #231e33; // Bottom bar
+$highlight-grey: #5c1f1f; // Link highlight
+$midnightblue: #2c3e50;
+$link-highlight: #75c964;
+// Fonts
+//
+$fonts: "Times", "Trebuchet MS",
+Verdana,
+"Verdana Ref",
+"Segoe UI",
+Candara,
+"Lucida Grande",
+"Lucida Sans Unicode",
+"Lucida Sans",
+Tahoma,
+sans-serif;
+$text-fonts: Verdana, "Trebuchet MS",
+Verdana,
+"Verdana Ref",
+"Segoe UI",
+Candara,
+"Lucida Grande",
+"Lucida Sans Unicode",
+"Lucida Sans",
+Tahoma,
+sans-serif;
+$code-fonts: "Times", Consolas,
+"Andale Mono WT",
+"Andale Mono",
+Menlo,
+Monaco,
+"Lucida Console",
+"Lucida Sans Typewriter",
+"DejaVu Sans Mono",
+"Bitstream Vera Sans Mono",
+"Liberation Mono",
+"Nimbus Mono L",
+"Courier New",
+Courier,
+"YaHei Consolas Hybrid",
+monospace,
+"Segoe UI Emoji",
+"PingFang SC",
+"Microsoft YaHei";
+// Mixins
+//
+@mixin dimmed {
+    opacity: .6;
+}
+
+@mixin aTag {
+    a {
+        word-wrap: break-word;
+        border: none;
+        box-shadow: inset 0 -1px 0 $text;
+        transition-property: box-shadow, color;
+        transition-duration: .1s;
+        &:hover {
+            box-shadow: inset 0 -1em 0 $light-grey;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Sebastian Urchs"
+theme = "hermit"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 0  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "yourdiscussshortname"
+
+[author]
+  name = "Sebastian Urchs"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
+
+  homeSubtitle = "Scientific Software Developer @ Université de Montréal"
+  footerCopyright = ''
+  # bgImg = ""  # Homepage background-image URL
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/username/repository/commit/"
+
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
+
+  relatedPosts = false  # Add a related content section to all single posts page
+
+  code_copy_button = true # Turn on/off the code-copy-button for code-fields
+  
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/s_urchs"
+
+[[params.social]]
+    name = "orcid"
+    url = "https://orcid.org/0000-0001-5504-8579"
+  
+[[params.social]]
+    name = "github"
+    url = "https://github.com/surchs"
+
+[[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/sebastian-urchs-9a913594/"
+
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Publications"
+    url = "publication/"
+    weight = 20
+
+  [[menu.main]]
+    name = "CV"
+    url = "cv/"
+    weight = 30
+
+#  [[menu.main]]
+#    name = "Projects"
+#    url = "about/"
+#    weight = 40
+
+# Configure the Markdown renderer.
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+
+disableKinds = ["RSS"]
